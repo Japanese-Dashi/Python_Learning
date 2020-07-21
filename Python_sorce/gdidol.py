@@ -5,17 +5,21 @@ idol_list = ["高坂穂乃果", "南ことり", "園田海未", "星空凛", "�
              "エマ･ヴェルデ", "近江彼方", "朝香果林"]
 
 print("相性のいいアイドルを表示します")
-in_str = input("整数を入力してください << ")
-in_num = int(in_str)
+while True:
+    in_str = input("整数を入力してください << ")
+    if in_str == 'finish':
+        break
 
-id_length = len(idol_list)
+    in_num = int(in_str)
 
-if id_length > in_num:
-    answer = id_length % in_num
-elif id_length <= in_num:
-    answer = in_num % id_length
+    id_length = len(idol_list)
 
-print("貴方と相性の良いアイドル :", idol_list[answer])
+    if id_length > in_num:
+        answer = id_length % in_num
+    elif id_length <= in_num:
+        answer = in_num % id_length
+
+    print("貴方と相性の良いアイドル :", idol_list[answer])
 
 
 input('type to exit')
