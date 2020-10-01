@@ -36,4 +36,17 @@ while 1:
 
         print("乗算結果は{}です\n".format(multi_ans))
     elif inNum == 4:
-        print()
+        input_A = input("1つ目の数字: ")
+        input_B = input("2つ目の数字: ")
+        input_C = input("3つ目の数字: ")
+
+        a4, b4, c4 = int(input_A), int(input_B), int(input_C)
+        division_ans = AO.Division(a4, b4, c4)
+
+        print(division_ans)
+    elif inNum == 5:
+        in1 = input("1つ目の数字: ")
+        in2 = input("2つ目の数字: ")
+        a5, b5 = int(in1), int(in2)
+
+        
