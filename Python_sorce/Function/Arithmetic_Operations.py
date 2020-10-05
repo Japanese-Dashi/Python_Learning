@@ -31,3 +31,17 @@ def Division(x1, x2, x3):
 
     ans = ((dy1/dy2)/dy3)
     return ans
+
+
+def Exponentiation(x1, x2):
+    ans = (x1)**(x2)
+    return ans
+
+
+def EvenOROdd(x):
+    if x%2 == 0:
+        return 0
+    else:
+        return 1
+
+
