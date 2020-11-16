@@ -15,9 +15,9 @@ while True:
     id_length = len(idol_list)
 
     if id_length > in_num:
-        answer = id_length % in_num
+        answer = (id_length+3) % in_num
     elif id_length <= in_num:
-        answer = in_num % id_length
+        answer = (in_num*2) % (id_length-2)
 
     print("貴方と相性の良いアイドル :", idol_list[answer])
 

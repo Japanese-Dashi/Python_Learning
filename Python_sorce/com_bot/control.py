@@ -1,17 +1,20 @@
-TalkDictionary = {"おはよう":"おはようございます", "調子はどう?":"最近大変ですが、元気です",
-"こんにちは":"こんにちは", "こんばんわ":"こんばんわ", "趣味はある？":"貴方と話をすることです",
+TalkDictionary = {"おはよう":"おはよう！", "調子はどう?":"最近大変だけど、元気だよ",
+"こんにちは":"こんにちは", "こんばんわ":"こんばんわ", "趣味はある？":"貴方と話をすることだね",
+"調子はどう？":"最近大変だけど、元気だよ", "趣味はある?":"貴方と話をすることだね",
+"今何時？":"右上見ろ？", "進捗どうですか？":"ないです",
 "さようなら":"さようなら\nPythonBotSystem >>チャットボットを終了します"}
 
 
 def talk_condition(cmd, TalkDic):
-    if cmd == "さようなら":
+    CmdValCheck = cmd in TalkDic
+    if CmdValCheck == False:
+        print("PythonBot >>すみません、よくわかりません")
+        return 1
+    elif cmd == "さようなら":
         print("PythonBot >>{}".format(TalkDic[cmd]))
         return 0
     elif cmd != "さようなら":
         print("PythonBot >>{}".format(TalkDic[cmd]))
-        return 1
-    elif TalkDic[cmd]:
-        print("PythonBot >>すみません、よくわかりません")
         return 1
 
 

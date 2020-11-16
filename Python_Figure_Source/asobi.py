@@ -7,8 +7,8 @@ def circle():
         forward(20)     #20前に描画カーソルを進める、円の大きさを決める
         left(10)    #10度左に傾ける
 
-for cnt in range(30):
+for cnt in range(36):
     circle()
-    left(12)
+    left(10)
 
 input('type to exit')
