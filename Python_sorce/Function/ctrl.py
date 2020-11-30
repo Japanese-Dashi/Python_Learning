@@ -2,7 +2,7 @@ import Arithmetic_Operations as AO
 import math
 
 while 1:
-    print("1: 加算  2: 減算  3: 乗算  4: 除算  5: 累乗  6: exp()  7: 奇数、偶数判定  8: 因数分解  9: 階乗  0: 終了")
+    print("1: 加算  2: 減算  3: 乗算  4: 除算  5: 累乗  6: exp()  7: 奇数、偶数判定  8: 階乗  0: 終了")
 
     inStr = input("使用したい機能番号を入力してください << ")
     inNum = int(inStr)
@@ -70,4 +70,9 @@ while 1:
             ans_sen = "奇数"
 
         print("{}は{}である\n".format(a7, ans_sen))
-    
+    elif inNum == 8:
+        xx1 = input("数字を入力してください: ")
+        x1 = int(xx1)
+        ans = AO.Factorial(x1)
+        print("{}の階乗は{}です。\n".format(x1, ans))
+

@@ -45,3 +45,13 @@ def EvenOROdd(x):
         return 1
 
 
+def Factorial(x):
+    cnt, answer = 1, 1
+    if x > 1:
+        while cnt <= x:
+            answer *= cnt
+            cnt += 1
+        return answer
+    else:
+        return answer
+
